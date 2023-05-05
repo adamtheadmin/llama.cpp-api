@@ -4,8 +4,8 @@ import chat from './chat';
 import * as Buffer from "buffer";
 import bodyParser from "body-parser";
 import cors from 'cors';
+import config from './config.json';
 
-const port:number = process.env?.PORT ? +process.env.PORT : 8080;
 const app = express();
 
 app.use(cors());
@@ -21,7 +21,7 @@ app.post('/chat', async (req: express.Request, res: express.Response) => {
     res.json({response});
 });
 
-const server = app.listen(port, () => console.log(`Chatbot Listening on port ${port}`));
+const server = app.listen(config.port, () => console.log(`Chatbot Listening on port ${config.port}`));
 
 const io = new Server(server, {
     cors: {
