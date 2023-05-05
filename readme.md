@@ -18,13 +18,15 @@ Features:
 ### Run
 - Install Typescript
 - `npm i`
+- `cp config.example.json config.example.json`
+- `nano config.json` Enter proper details into config.json file
 - `ts-node index.ts`
 
 ### Install
 - Install Typescript
+- `npm i`
 - `cp config.example.json config.example.json`
 - `nano config.json`
-- `npm i`
 - `npm run build`
 - Install as a service, the run command would be `node index.js`. Be sure to have all the proper config values set.
 
