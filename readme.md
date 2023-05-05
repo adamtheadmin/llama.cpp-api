@@ -1,4 +1,4 @@
-# LlaMA.cpp Chatbot Restful API
+# LLaMA.cpp Chatbot Restful API
 
 *This was created using [alpaca api](https://github.com/adamtheadmin/alpaca-chatbot-api) as a base.*
 
